@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ARATH DÍAZ | Psicología Canina</title>
+
+<style>
+
+body{
+margin:0;
+background:#f8f7f3;
+font-family:Arial,Helvetica,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+
+width:90%;
+max-width:430px;
+
+background:white;
+
+border-radius:25px;
+
+padding:35px;
+
+box-shadow:0 10px 35px rgba(0,0,0,.15);
+
+text-align:center;
+
+}
+
+h1{
+
+margin:0;
+
+font-size:30px;
+
+color:#222;
+
+}
+
+h2{
+
+margin-top:5px;
+
+font-weight:400;
+
+color:#b89452;
+
+}
+
+p{
+
+color:#666;
+
+margin-bottom:30px;
+
+}
+
+button{
+
+width:100%;
+
+padding:17px;
+
+margin:10px 0;
+
+font-size:18px;
+
+border:none;
+
+border-radius:15px;
+
+background:#b89452;
+
+color:white;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+button:hover{
+
+background:#9f7d40;
+
+transform:scale(1.03);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🐾 ARATH DÍAZ</h1>
+
+<h2>Psicología Canina</h2>
+
+<p>Selecciona el servicio sobre el que deseas recibir información.</p>
+
+<button onclick="abrir('Paseo recreativo')">
+🐕 Paseo recreativo
+</button>
+
+<button onclick="abrir('Paseo correctivo')">
+🦮 Paseo correctivo
+</button>
+
+<button onclick="abrir('Obediencia básica')">
+🐶 Obediencia básica
+</button>
+
+<button onclick="abrir('Apoyo psicológico a personas')">
+🧠 Apoyo psicológico a personas
+</button>
+
+</div>
+
+<script>
+
+function abrir(servicio){
+
+let numero="5212222385400";
+
+let mensaje="Hola, me interesa recibir información sobre: "+servicio;
+
+window.open("https://wa.me/"+numero+"?text="+encodeURIComponent(mensaje),"_blank");
+
+}
+
+</script>
+
+</body>
+</html>
