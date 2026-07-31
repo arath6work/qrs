@@ -119,19 +119,19 @@ box-shadow:0 3px 10px rgba(31,78,95,.20);
 
 <p>Selecciona el servicio sobre el que deseas recibir información.</p>
 
-<button onclick="abrir('Paseo recreativo')">
+<button onclick="abrir('paseo recreativo')">
 🐕 Paseo recreativo
 </button>
 
-<button onclick="abrir('Paseo correctivo')">
+<button onclick="abrir('paseo correctivo')">
 🦮 Paseo correctivo
 </button>
 
-<button onclick="abrir('Obediencia básica')">
+<button onclick="abrir('obediencia básica')">
 🐶 Obediencia básica
 </button>
 
-<button onclick="abrir('Apoyo psicológico a personas')">
+<button onclick="abrir('apoyo psicológico a personas')">
 🧠 Apoyo psicológico a personas
 </button>
 
@@ -143,7 +143,7 @@ function abrir(servicio){
 
 let numero="5212222385400";
 
-let mensaje="Hola, me interesa recibir información sobre: "+servicio;
+let mensaje="Hola, me interesa recibir información sobre "+servicio;
 
 window.open("https://wa.me/"+numero+"?text="+encodeURIComponent(mensaje),"_blank");
 
