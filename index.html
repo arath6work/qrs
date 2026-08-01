@@ -6,6 +6,8 @@
 
 <title>ARATH DÍAZ | Psicología Canina</title>
 
+<script src="https://unpkg.com/lucide@latest"></script>
+
 <style>
 
 body{
@@ -118,9 +120,19 @@ flex-direction:column;
 
 .service-icon{
 
-font-size:38px;
+color:#CDA861;
 
 margin-bottom:18px;
+
+}
+
+.service-icon svg{
+
+width:38px;
+
+height:38px;
+
+stroke-width:1.8;
 
 }
 
@@ -271,8 +283,9 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
 </p>
   
 <div class="service" onclick="abrir('paseo recreativo')">
-  <div class="service-icon">🐾</div>
-  <div class="service-title">Paseo recreativo</div>
+<div class="service-icon">
+<i data-lucide="paw-print"></i>
+</div>  <div class="service-title">Paseo recreativo</div>
   <div class="service-description">
     Caminatas diseñadas para estimular física y mentalmente a tu perro.
   </div>
@@ -280,8 +293,9 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
 </div>
 
 <div class="service" onclick="abrir('paseo correctivo')">
-   <div class="service-icon">🎯</div>
-  <div class="service-title">Paseo correctivo</div>
+<div class="service-icon">
+<i data-lucide="route"></i>
+</div>  <div class="service-title">Paseo correctivo</div>
   <div class="service-description">
     Paseos enfocados en mejorar conductas y reforzar hábitos adecuados.
   </div>
@@ -289,8 +303,9 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
 </div>
 
 <div class="service" onclick="abrir('obediencia básica')">
-   <div class="service-icon">🎓</div>
-  <div class="service-title">Obediencia básica</div>
+<div class="graduation-cap">
+<i data-lucide="paw-print"></i>
+</div>  <div class="service-title">Obediencia básica</div>
   <div class="service-description">
     Enseñanza de comandos esenciales para una convivencia equilibrada.
   </div>
@@ -298,8 +313,9 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
 </div>
 
 <div class="service" onclick="abrir('apoyo psicológico')">
-   <div class="service-icon">🧠</div>
-  <div class="service-title">Apoyo psicológico a personas</div>
+<div class="service-icon">
+<i data-lucide="brain"></i>
+</div>  <div class="service-title">Apoyo psicológico a personas</div>
   <div class="service-description">
     Acompañamiento profesional orientado al bienestar emocional.
   </div>
@@ -331,6 +347,8 @@ let mensaje="Hola! Quisiera, por favor, recibir información sobre "+servicio;
 window.open("https://wa.me/"+numero+"?text="+encodeURIComponent(mensaje),"_blank");
 
 }
+
+lucide.createIcons();
 
 </script>
 
