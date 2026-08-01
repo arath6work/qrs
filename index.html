@@ -94,21 +94,21 @@ margin-bottom:30px;
 
 background:#FFFFFF;
 
-border:1px solid rgba(31,78,95,.10);
+border:1px solid rgba(31,78,95,.08);
 
-border-radius:22px;
+border-radius:24px;
 
-padding:22px;
+padding:28px;
 
-margin:18px 0;
+margin:22px 0;
 
 text-align:left;
 
 cursor:pointer;
 
-transition:.25s;
+transition:all .30s ease;
 
-box-shadow:0 6px 18px rgba(0,0,0,.05);
+box-shadow:0 8px 22px rgba(0,0,0,.05);
 
 display:flex;
 
@@ -118,22 +118,18 @@ flex-direction:column;
 
 .service-icon{
 
-font-size:34px;
+font-size:38px;
 
-margin-bottom:14px;
-
-}
-
-.service:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 14px 28px rgba(0,0,0,.10);
-
-border-color:#1F4E5F;
+margin-bottom:18px;
 
 }
 
+.service:hover .service-link{
+
+transform:translateX(6px);
+
+}
+  
 .service-title{
 
 font-size:22px;
@@ -160,13 +156,17 @@ margin-bottom:18px;
 
 .service-link{
 
+margin-top:auto;
+
 font-size:15px;
 
-font-weight:600;
+font-weight:700;
 
 color:#CDA861;
 
 align-self:flex-end;
+
+letter-spacing:.5px;
 
 transition:.25s;
 
