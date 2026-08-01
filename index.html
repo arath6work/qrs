@@ -170,9 +170,9 @@ margin-bottom:18px;
 
 .service-link{
 
-margin-top:auto;
+margin-top:10px;
 
-font-size:15px;
+font-size:14px;
 
 font-weight:700;
 
@@ -180,9 +180,15 @@ color:#CDA861;
 
 align-self:flex-end;
 
-letter-spacing:.5px;
+letter-spacing:.3px;
 
 transition:.25s;
+
+}
+
+.service-link:hover{
+
+letter-spacing:.8px;
 
 }
 
@@ -290,6 +296,48 @@ transform:translateY(0);
 
 }
 
+@media(max-width:480px){
+
+.card{
+
+width:100%;
+
+padding:30px 20px;
+
+}
+
+.logo{
+
+width:220px;
+
+}
+
+h1{
+
+font-size:26px;
+
+}
+
+.intro{
+
+font-size:16px;
+
+}
+
+.service{
+
+padding:22px;
+
+}
+
+.service-title{
+
+font-size:20px;
+
+}
+
+}
+
 </style>
 
 </head>
@@ -311,8 +359,7 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
   <div class="service-description">
     Caminatas diseñadas para estimular física y mentalmente a tu perro.
   </div>
-  <div class="service-link">Solicitar →</div>
-</div>
+<div class="service-link">Consultar ahora →</div></div>
 
 <div class="service" onclick="abrir('paseo correctivo')">
 <div class="service-icon">
@@ -321,8 +368,7 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
   <div class="service-description">
     Paseos enfocados en mejorar conductas y reforzar hábitos adecuados.
   </div>
-  <div class="service-link">Solicitar →</div>
-</div>
+<div class="service-link">Consultar ahora →</div></div>
 
 <div class="service" onclick="abrir('obediencia básica')">
 <div class="service-icon">
@@ -331,8 +377,7 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
   <div class="service-description">
     Enseñanza de comandos esenciales para una convivencia equilibrada.
   </div>
-  <div class="service-link">Solicitar →</div>
-</div>
+<div class="service-link">Consultar ahora →</div></div>
 
 <div class="service" onclick="abrir('apoyo psicológico')">
 <div class="service-icon">
@@ -341,8 +386,7 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
   <div class="service-description">
     Acompañamiento profesional orientado al bienestar emocional.
   </div>
-  <div class="service-link">Solicitar →</div>
-</div>
+<div class="service-link">Consultar ahora →</div></div>
 
 <div class="footer">
 <a href="https://wa.me/5212222385400" target="_blank">
