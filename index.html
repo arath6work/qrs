@@ -96,6 +96,10 @@ transition:.25s;
 
 box-shadow:0 6px 18px rgba(0,0,0,.05);
 
+display:flex;
+
+flex-direction:column;
+
 }
 
 .service:hover{
@@ -110,13 +114,13 @@ border-color:#1F4E5F;
 
 .service-title{
 
-font-size:21px;
+font-size:22px;
 
-font-weight:600;
+font-weight:700;
 
 color:#1F4E5F;
 
-margin-bottom:10px;
+margin-bottom:12px;
 
 }
 
@@ -124,9 +128,25 @@ margin-bottom:10px;
 
 font-size:15px;
 
-line-height:1.6;
+line-height:1.7;
 
-color:#666;
+color:#6B7280;
+
+margin-bottom:18px;
+
+}
+
+.service-link{
+
+font-size:15px;
+
+font-weight:600;
+
+color:#CDA861;
+
+align-self:flex-end;
+
+transition:.25s;
 
 }
 
@@ -189,6 +209,7 @@ box-shadow:0 3px 10px rgba(31,78,95,.20);
   <div class="service-description">
     Caminatas diseñadas para estimular física y mentalmente a tu perro.
   </div>
+  <div class="service-link">Solicitar →</div>
 </div>
 
 <div class="service" onclick="abrir('paseo correctivo')">
@@ -196,6 +217,7 @@ box-shadow:0 3px 10px rgba(31,78,95,.20);
   <div class="service-description">
     Paseos enfocados en mejorar conductas y reforzar hábitos adecuados.
   </div>
+  <div class="service-link">Solicitar →</div>
 </div>
 
 <div class="service" onclick="abrir('obediencia básica')">
@@ -203,6 +225,7 @@ box-shadow:0 3px 10px rgba(31,78,95,.20);
   <div class="service-description">
     Enseñanza de comandos esenciales para una convivencia equilibrada.
   </div>
+  <div class="service-link">Solicitar →</div>
 </div>
 
 <div class="service" onclick="abrir('apoyo psicológico')">
@@ -210,6 +233,7 @@ box-shadow:0 3px 10px rgba(31,78,95,.20);
   <div class="service-description">
     Acompañamiento profesional orientado al bienestar emocional.
   </div>
+  <div class="service-link">Solicitar →</div>
 </div>
   
 </div>
