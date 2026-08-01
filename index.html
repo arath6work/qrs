@@ -242,9 +242,15 @@ text-align:center;
 
 .footer a{
 
-display:block;
+display:flex;
 
-margin:12px 0;
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+margin:14px 0;
 
 text-decoration:none;
 
@@ -262,6 +268,18 @@ transition:.25s;
 
 color:#CDA861;
 
+transform:translateX(3px);
+
+}
+
+.footer a svg{
+
+width:20px;
+
+height:20px;
+
+stroke-width:2;
+
 }
 
 .footer-text{
@@ -277,20 +295,60 @@ color:#888;
 .trust{
 
 margin-top:35px;
-  
-padding:18px 10px 10px;
+
+padding-top:20px;
 
 border-top:1px solid rgba(31,78,95,.08);
 
-font-size:14px;
+display:flex;
 
-letter-spacing:1px;
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:12px;
+
+}
+
+.trust span{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+width:150px;
+
+height:42px;
+
+border:1px solid rgba(205,168,97,.35);
+
+border-radius:999px;
+
+background:rgba(205,168,97,.08);
 
 color:#CDA861;
 
+font-size:14px;
+
 font-weight:600;
 
-text-transform:uppercase;
+letter-spacing:.2px;
+
+box-sizing:border-box;
+
+transition:.25s;
+
+}
+
+.trust span:hover{
+
+background:rgba(205,168,97,.14);
+
+border-color:#CDA861;
+
+transform:translateY(-2px);
 
 }
   
@@ -463,18 +521,22 @@ Comprender el comportamiento es el primer paso para fortalecer el vínculo con t
 <div class="service-link">Consultar ahora →</div></div>
 
 <div class="trust">
-
-<p>
-Comunicación · Educación · Bienestar</p>
-</div>
+<span>Comunicación</span>
+<span>Educación</span>
+<span>Bienestar</span>
+</div>  
   
 <div class="footer">
 <a href="https://wa.me/5212222385400" target="_blank">
-WhatsApp
+<i data-lucide="message-circle"></i>
+<span>WhatsApp</span>
 </a>
+
 <a href="https://instagram.com/JArathDSR" target="_blank">
-Instagram
+<i data-lucide="instagram"></i>
+<span>Instagram</span>
 </a>
+
 <p class="footer-text">
 Atención con cita previa.
 </p>
